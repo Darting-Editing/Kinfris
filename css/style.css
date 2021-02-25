@@ -37,7 +37,7 @@ body
 .header-text h1
 {
     font-size: 60px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -54,7 +54,7 @@ body
 .header-text p
 {
     font-size: 26px;
-    color: #fff;
+    color: #0c7;
 }
 
 
