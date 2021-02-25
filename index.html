@@ -26,6 +26,33 @@
 
 </head>
 <body>
+	<!-- Load Facebook SDK for JavaScript -->
+	<div class="fb-customerchat" page_id="<PAGE_ID>">
+	</div>
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/id_ID/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="install_email"
+        page_id="102747355202405"
+  logged_in_greeting="Hai ! ,, Apa ada yg bisah saya bantu ??"
+  logged_out_greeting="Hai ! ,, Apa ada yg bisah saya bantu ??">
+      </div>
 <header>
 	<div id="homeFullScreen">
 		<div class="header-text">
